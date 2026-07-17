@@ -1,0 +1,52 @@
+body{
+    margin: 0px;
+    padding: 10px;
+}
+div.card{
+    margin: 40px;
+    padding: 10px;
+    height: 370px;
+    text-align: center;
+    /* border: 4px solid rgba(41, 84, 238, 0.964); */
+    box-shadow: -3px -3px 12px black;
+    /* box-shadow: 0 0 12px black; */
+    border-radius: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top, bottom; 
+
+    
+}
+div.card:hover{
+    box-shadow: 8px 8px 20px rgb(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+h2.card{
+    display: block;
+    appearance: none;
+    margin-top: 180px;
+    padding: 10px 0px;
+    background-color: white;
+    box-shadow: 0 0 4px rgb(4, 57, 78);
+}
+#img1{
+    background-image: url(images/mephi_concert.jpg),
+    url(images/blue_dots_new.jpg)
+
+}
+#img2{
+    background-image: url(images/mephi_competition.jpg),
+    url(images/blue_dots_new.jpg);
+}
+#img3{
+    background-image: url(images/mephi_repetition.jpg),
+    url(images/blue_dots_new.jpg);
+}
+
+
+#cards{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 0px auto;
+}
