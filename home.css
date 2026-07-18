@@ -1,24 +1,58 @@
 body{
     margin: 0px;
     padding: 0px;
+    background-color:rgb(255, 255, 255);
 }
 #page-title{
-    display: grid;
-    grid-template-rows: 1fr;
+    width: 100%;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
+    margin: 0px;
+    padding: 20px 0px;
+}
+/* #page-title.open{
+    margin-right: 250px; 
+}*/
+#header{
+    width: 100%;
     margin: 0px 0px 30px 0px;
-    padding: 30px;
-    background-color: rgb(0, 51, 255);
-    color:white ;
-    box-shadow: 3px 3px 10px rgb(0, 42, 255), 3px 3px 10px (0, 42, 255);
-
+    padding: 10px 20px;
+    background-color: #3E6DE4;
+    color: white;
+    border: 3px solid #3E6DE4;
+    box-shadow: inset 0px 0px 10px white;
+    position: relative;
+    transition: 0.5s;
+} 
+/* #header.open{
+    margin-left: 250px;
+} */
+#menu{
+    position: absolute;
+    top: 10%;
+    padding: 8px 16px;
+    margin: 11px;
+    left: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    font-size: 30px;
+    color:#3E6DE4;
+    font-weight: bold;
+    box-shadow: inset 0 0 7px #3E6DE4;
+    transition: 0.5s;
+}
+#menu:hover{
+    cursor:pointer;
+}
+#menu.open{
+    margin-left: 250px;
 }
 
 div.card{
-    margin: 40px;
+    margin: auto;
     padding: 10px;
     height: 370px;
+    width: 300px;
     text-align: center;
     /* border: 4px solid rgba(41, 84, 238, 0.964); */
     box-shadow: -8px -8px 12px black;
@@ -72,4 +106,28 @@ h2.card{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin: 0px auto;
+}
+#navigation{ 
+    text-align: center;
+    list-style: none;
+    top: 0;
+    left: 0;
+    /* padding: 10px 80px 0px 80px; */
+    padding: 10px 0px;
+    background-color: rgb(77, 76, 76);
+    color: white;
+    font-size: 20px;
+    width: 0px;
+    height: 100%;
+    position: fixed;
+    box-shadow: inset 0px 0px 10px white;
+    transition: 0.5s;
+    overflow: hidden;
+}
+#navigation.open{
+    width: 250px;
+}
+.nav_a{
+    display: block;
+    color: white;
 }
